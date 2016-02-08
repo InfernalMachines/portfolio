@@ -1,6 +1,4 @@
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
-
-
 /*Fonts*/
 @font-face {
 font-family: 'glaB';
@@ -22,28 +20,24 @@ url('../fonts/glacialindifference-regular-webfont.woff') format('woff'),
 url('../fonts/glacialindifference-regular-webfont.ttf') format('truetype'),
 url('../fonts/glacialindifference-regular-webfont.svg#glacial_indifferenceregular') format('svg');
 font-weight: normal;
-font-style: normal;}
-
+font-style: normal;
+}
 html{background-image:url("../img/bck.jpg"); background-size: cover;}
-
-h1,h2,h3,#prjDescTitle,.prjArchiveTitle,.aboutTitle{
+h1,h2,h3,#prjDescTitle,.prjArchiveTitle,.aboutTitle,.introHeading,.currentPrjTitle{
     font-family: "glaB";}
-#prjDescCont,.aboutDesc{font-family:"glaR"}
-
+ h3{font-size:1.3em;}
+#prjDescCont,.aboutDesc,.introDesc,.expWrap{font-family:"glaR"}
 .cap {
     font-size: 1.2em;
 }
-
 header,footer,
 .contentWrap {
     width: 960px;
     margin: 0 auto;
 }
-
 header {
     height: 100px;
 }
-
 .headWrap {
     border-bottom: 1px solid #666666;
     width: 100%;
@@ -51,36 +45,30 @@ header {
     height: 100px;
     display: block;
     position: fixed;
+    z-index: 100;
 }
-
 nav {
     font-family: "glaR";
     float: right;
     position: relative;
 }
-
 header nav {
     top: 40px;
 }
-
 header nav ul li {
     display: inline-block;
     margin-right: 15px;
 }
-
 header nav a:link {
     font-size: 1.1em;
-    color: #3399cc;
+color: #3399cc;
 }
-
 header nav a:visited {
     color: #3399cc;
 }
-
 header nav a:hover {
     color: grey;
 }
-
 .logoTxt {
     font-size: 1.6em;
     letter-spacing: .09em;
@@ -89,87 +77,129 @@ header nav a:hover {
     position: relative;
     top: 30px;
 }
-
 .contentWrap {
     min-height: 100%;
     padding-top: 150px;
     display: block;
 }
-
 .introWrap {
     height: 400px;
 }
-
-.introImage,.introTxt {
+.introImage,.introTxtWrap {
     float: left;
 }
-
 .introImage {
     width: 40%;
-   
 }
-
-.introTxt {
+.introTxtWrap{
     width: 60%;
-    
+    color: #333333;
 }
-
+.introDesc {
+    font-size: 1.8em;
+    letter-spacing: .1em;
+    line-height: 1.3em;
+}
+.introHeading {
+    font-size: 2.5em;
+    padding-bottom: 15px;
+}
 .introFeat {
-    width: 800px;
-    height:300px;
+    width: 960px;
+    height: 300px;
     margin: 0 auto;
     display: block;
+    border-top: 1px solid grey;
+    padding: 20px 0 50px 0;
 }
 
-.featuredImg {
-    width: 30%;
+.currentPrjTitle{
+	font-size:1.5em; 
+	color:#333333;
+}
+.introFeat ul {margin-top:15px;}
+.introFeat ul li {
+    width: 220px;
     height: 250px;
-    background-color: yellow;
+    background-color: #93a9b5;
     display: inline-block;
-    float: left;
-    margin: 5px;
+   
+    margin: 8px;
 }
-
 .footWrap {
     height: 100px;
     background-color: #a9bfc0;
     display: block;
 }
-
 footer {
     height: 100px;
     display: block;
 }
-
 footer nav {
     top: 45px;
 }
-
 footer nav li {
     display: inline-block;
     margin-right: 15px;
 }
-
 .clear {
     clear: both;
 }
+.prjSlideWrap {
+    height: 350px;
+    background-color: black;
+}
+#prjDescTitle,.prjArchiveTitle,.aboutTitle {
+    font-size: 1.5em;
+    margin: 15px 0 25px 0;
+}
+#prjDescCont {
+    font-size: 1em;
+    line-height: 1.2em;
+    height: 150px;
+    border-bottom: 1px solid grey;
+}
+.prjArchiveWrap {
+    width: 850px;
+    margin: 0 auto;
+    padding: 15px 0 25px 0;
+}
+.prjArchiveWrap ul li {
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    display: inline-block;
+}
+.aboutProfilePicWrap,.aboutTxtWrap {
+    float: left;
+}
+.aboutProfilePicWrap {
+    width: 300px;
+    height: 700px;
+    background-color: grey;
+}
+.aboutTxtWrap {
+    padding: 0 15px 0 15px;
+    width: 600px;
+}
+.aboutTitle {
+    border-bottom: 1px solid grey;
+    width: 100%;
+}
+.aboutDesc {
+    line-height: 1.3em;
+}
+.expWrap {
+    border-top: 1px solid grey;
+    margin: 25px 0 15px 0;
+}
+.expWrap div {
+    float: left;
+    width: 46%;
+    padding: 10px;
+}
 
-
-.prjSlideWrap{ height:350px; background-color: black;}
-#prjDescTitle,.prjArchiveTitle,.aboutTitle{font-size:1.5em; margin:15px 0 25px 0;}
-#prjDescCont{font-size:1em; line-height:1.2em;height: 150px; border-bottom:1px solid grey;}
-.prjArchiveWrap{width:850px; margin: 0 auto;padding:15px 0 25px 0;}
-.prjArchiveWrap ul li{ width:200px; height: 100px; background-color: red;display: inline-block;}
-.aboutProfilePicWrap,.aboutTxtWrap{float:left;}
-.aboutProfilePicWrap{width:300px;height:700px; background-color: grey;}
-.aboutTxtWrap{padding:0 15px 0 15px; width:600px;}
-.aboutTitle{border-bottom: 1px solid grey;width:100%;}
-.aboutDesc{line-height:1.3em;}
-
-.expWrap{border-top:1px solid grey; margin:25px 0 15px 0;}
-
-
-
-
-
+.expWrap ul li {
+    padding: 3px;
+}
 
