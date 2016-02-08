@@ -24,9 +24,9 @@ url('../fonts/glacialindifference-regular-webfont.svg#glacial_indifferenceregula
 font-weight: normal;
 font-style: normal;}
 
-h1,h2,h3,#prjDescTitle,.prjArchiveTitle{
+h1,h2,h3,#prjDescTitle,.prjArchiveTitl,.aboutTitle{
     font-family: "glaB";}
-#prjDescCont{font-family:"glaR"}
+#prjDescCont,.aboutDesc{font-family:"glaR"}
 
 .cap {
     font-size: 1.2em;
@@ -155,7 +155,20 @@ footer nav li {
 
 
 .prjSlideWrap{ height:350px; background-color: black;}
-#prjDescTitle,.prjArchiveTitle{font-size:1.5em;margin:15px 0 25px 0;}
+#prjDescTitle,.prjArchiveTitle,.aboutTitle{font-size:1.5em;margin:15px 0 25px 0;}
 #prjDescCont{font-size:1em; line-height:1.2em;height: 150px; border-bottom:1px solid grey;}
 .prjArchiveWrap{width:850px; margin: 0 auto;padding:15px 0 25px 0;}
 .prjArchiveWrap ul li{ width:200px; height: 100px; background-color: red;display: inline-block;}
+.aboutProfilePicWrap,.aboutTxtWrap{float:left;}
+.aboutProfilePicWrap{width:300px;height:700px; background-color: grey;}
+.aboutTxtWrap{padding:0 15px 0 15px; width:600px;}
+.aboutTitle{border-bottom: 1px solid grey;width:100%;}
+.aboutDesc{line-height:1.3em;}
+
+.expWrap{border-top:1px solid grey; margin:25px 0 15px 0;}
+
+
+
+
+
+
